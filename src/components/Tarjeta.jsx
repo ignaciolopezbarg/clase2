@@ -47,7 +47,7 @@ export const ofertas = [
     entidad: "Galicia",
     descuento: 30,
     tope: 10000,
-    dia: "domingo",
+    dia: "martes",
     articulo: "Indumentaria ",
   },
 ];
