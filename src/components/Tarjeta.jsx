@@ -7,6 +7,7 @@ const articulos = [
   "panaderia",
   "ferreteria",
   "indumentaria",
+  "combustible"
 ];
 
 export const ofertas = [
@@ -42,14 +43,24 @@ export const ofertas = [
     dia: "jueves",
     articulo: "Ferreteria",
   },
+  
   {
     id: 5,
     entidad: "Galicia",
     descuento: 30,
     tope: 10000,
-    dia: "martes",
+    dia: "miercoles",
     articulo: "Indumentaria ",
   },
+  {
+    id: 6,
+    entidad: "Santander",
+    descuento: 10,
+    tope: 10000,
+    dia: "martes",
+    articulo: "Combustible",
+  }
+
 ];
 
 function Tarjeta() {
@@ -71,7 +82,7 @@ function Tarjeta() {
 
       <ul className=" w-50 flex flex-col items-center justify-center">
         {ofertas.map((oferta) => (
-          <li key={oferta.id}>
+          <li className = "w-full flex flex-col items-center justify-center border-2 border-slate-500 border-solid  " key={oferta.id}>
             {oferta.entidad}: {oferta.descuento}%- Hasta: ${oferta.tope} - Día:{" "}
             {""}
             {oferta.dia}- {oferta.articulo}

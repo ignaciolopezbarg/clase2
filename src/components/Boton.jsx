@@ -9,7 +9,7 @@ function Boton() {
     
 
     if (ofertasHoy.length > 0) {
-      console.log("Ejecutando alert");
+     
 
       Swal.fire({
         position: "top-end",
@@ -18,7 +18,7 @@ function Boton() {
         html: ofertasHoy
           .map(
             (o) =>
-              `<strong>${o.articulo}</strong> en ${o.entidad} con ${o.descuento}% de descuento`
+              `<strong>${o.articulo}</strong> con ${o.entidad} con ${o.descuento}% de descuento`
           )
           .join("<br>"),
         showConfirmButton: true,
